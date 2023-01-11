@@ -1,5 +1,5 @@
 name: nameWF
-on: workflow_dispatch
+on: push
 jobs: 
   print_st:
     runs-on: ubuntu-latest
