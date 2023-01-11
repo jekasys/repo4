@@ -1,0 +1,18 @@
+name: nameWF
+on: workflow_dispatch
+jobs: 
+  print_st:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print to console
+        run: echo hello git hub world! 2
+      - name: Print again
+        run: echo hello again2
+  print_st2:
+    runs-on: ubuntu-latest
+    needs: print_st
+    steps:
+      - name: print to another
+        run: echo goodbye! 2
+      - name: Print another 2
+        run: echo goodbye1111! 2
